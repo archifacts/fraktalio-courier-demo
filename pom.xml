@@ -233,6 +233,14 @@
     <build>
         <plugins>
             <plugin>
+                <executions>
+                    <execution>
+                        <id>repackage</id>
+                        <configuration>
+                            <classifier>layered</classifier>
+                        </configuration>
+                     </execution>
+                </executions>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <configuration>
